@@ -1,0 +1,42 @@
+#include <iostream>
+#include <windows.h>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+    // Crear un archivo CSV de excel
+    int numero;
+    string nombre, escuela, materia;
+
+    fstream fs;
+
+    cout << "Introduce el número de alumnos a registrar: ";
+    cin >> numero;
+
+    fs.open("alumnos.csv", ios::out);
+    fs << "Nombre" << "," << "Escuela" << ","<< "Materia" << "\n";
+    cout << "Introduce la informacion de " <<  numero << " alumnos" << endl;
+    for (int i = 0; i < numero; i++) {
+        cout << "Introduce el nombre del estudiante "<< i + 1 << ":";
+        fflush(stdin);
+        getline(cin, nombre);
+        cout << "Introduce la escuela del estudiante "<< i + 1 << ":";
+        getline(cin, escuela);
+        cout << "Introduce la materia del estudiante "<< i + 1 << ":";
+        getline(cin, materia);
+        fs << nombre << "," << escuela << "," << materia << "\n";
+    }
+    fs.close();
+
+    fstream fin;
+    string datos;
+    cout << "El archivo de Excel se ha creado exitosamente" << endl;
+    cout << "..... Mostrando datos ....." << endl;
+    fin.open("alumnos.csv", ios::in);
+    for (int i = 0; i <= numero; i++) {
+        getline(fin, datos);
+        cout << datos << endl;
+    }
+
+}

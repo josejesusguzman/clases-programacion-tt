@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Persona
+comment0.text=\r\n\ Modificadores\ de\ acceso\r\n\ public\ -\ \r\n\ private\r\n\ protected\r\n
+comment1.params=colorPiel
+comment1.target=void\ setColorPiel(int)
+comment2.params=
+comment2.target=java.lang.String\ getColorPiel()
+comment3.params=
+comment3.target=double\ getEstatura()
+comment4.params=
+comment4.target=Persona()
+comment5.params=nombre
+comment5.target=Persona(java.lang.String)
+comment6.params=
+comment6.target=void\ main()
+numComments=7

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1630728348 source:d:\jose1\documents\clases tiktok\c++\segundaclase\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+
