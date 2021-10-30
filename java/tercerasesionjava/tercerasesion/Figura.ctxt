@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Figura
+comment0.text=\r\n\ Abstract\ class\ Figura\ -\ write\ a\ description\ of\ the\ class\ here\r\n\ \r\n\ @author\:\ \r\n\ Date\:\ \r\n
+comment1.params=color
+comment1.target=Figura(java.lang.String)
+comment2.params=
+comment2.target=double\ calcularArea()
+comment3.params=
+comment3.target=java.lang.String\ getColor()
+numComments=4

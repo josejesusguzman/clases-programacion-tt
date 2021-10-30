@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocalización</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        var text = document.getElementById("location")
+
+        // Creación de una cookie
+        function getCookie() {
+            const d  = new Date();
+            d.setTime(d.getTime() + (2*24*60*60*1000));
+            var expiracion = "expires=" + d.toGMTString();
+            document.cookie = "comida_favorita=chilaquiles;" + expiracion +";path=/";
+            if(document.cookie) {
+                console.log(decodeURIComponent(document.cookie));
+            } else {
+                console.log("NO")
+            }
+        }
+
+        // Lambda en JavaScript
+        //[5,5,5].forEach(function add(numero) {result += numero});
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                text.innerHTML = "Este navegador no soporta la geolocalización"
+            }
+        }
+
+        function showPosition(position) {
+            text.innerHTML = "Latitud: " + position.coords.latitude
+            // PAra la longitd es: position.coords.longitude
+        }
+
+        function getIP() {
+            $.getJSON("https://api.ipify.org?format=json",
+                function(data) {
+                    $("#ip").html(data.ip)
+            })
+        }
+
+    </script>
+
+    </head>
+    <body onload="getCookie()">
+        <h1>Geolocalización</h1>
+        <p>Presiona el botón para obtener tus coordenadas</p>
+        <button onclick="getLocation()">Obten tus coordenadas</button>
+        <button onclick="getIP()">Obtén tu IP</button>
+    </body>
+
+    <p id="location"></p>
+    <p id="ip"></p>
+</html>

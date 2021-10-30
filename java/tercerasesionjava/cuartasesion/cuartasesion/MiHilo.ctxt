@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MiHilo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MiHilo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ nums
+comment1.target=MiHilo(java.lang.String,\ int[])
+comment2.params=nombre\ nums
+comment2.target=MiHilo\ crearHilo(java.lang.String,\ int[])
+comment3.params=
+comment3.target=void\ run()
+numComments=4

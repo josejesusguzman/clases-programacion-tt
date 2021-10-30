@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=DeTresEnTres
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ DeTresEnTres\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=DeTresEnTres()
+comment2.params=incremental
+comment2.target=DeTresEnTres(int)
+comment3.params=x
+comment3.target=void\ setIncremental(int)
+comment4.params=
+comment4.target=int\ getSiguiente()
+comment5.params=
+comment5.target=void\ reiniciarSerie()
+comment6.params=x
+comment6.target=void\ setValorInicial(int)
+numComments=7

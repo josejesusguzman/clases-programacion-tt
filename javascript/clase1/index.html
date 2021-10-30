@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Sirve para decirle al navegador que es un doc. HMTL -->
+<html> <!-- Aquí empieza el HTML -->
+    <head> <!-- Info de la página -->
+        <title>Mi pagína</title>
+    </head>
+    <body> <!-- Lo que se mostrará en la página -->
+        <h1 id="mititulo" onclick="cambiaColor()"></h1>
+        <button onclick="cambiaColor()">Cambia el color</button>
+        <button onclick="hacerPromesa()">Haz tu promesa</button>
+        <img src="" alt="Foto faltante" id="foto">
+    </body>
+</html>
+
+<script type="text/javascript">
+    var saludo = "Hola"
+    const titulo = document.getElementById("mititulo")
+    titulo.innerHTML = saludo
+    titulo.style.fontSize = "50px"
+    titulo.style.fontWeight = "bold"
+    titulo.style.color = "#292258"
+
+    function cambiaColor() {
+
+        var color = "#"
+
+        for (var i = 0; i < 6; i++) {
+            color += generarAleatorio()
+        }
+        
+        titulo.style.color = color
+        titulo.innerHTML = color
+        console.info(color)
+    }
+
+    function generarAleatorio() {
+        const hexa = ['a', 'b', 'c', 'd', 'e', 'f', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+        var numero = (Math.random()*15).toFixed(0)
+        return hexa[numero]
+    }
+
+    
+
+</script>

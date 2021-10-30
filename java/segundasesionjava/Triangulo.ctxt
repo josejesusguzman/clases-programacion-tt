@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Triangulo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Triangulo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Triangulo()
+comment2.params=estilo
+comment2.target=Triangulo(java.lang.String)
+comment3.params=
+comment3.target=double\ area()
+comment4.params=
+comment4.target=void\ showEstilo()
+comment5.params=
+comment5.target=void\ main()
+comment6.params=
+comment6.target=void\ hola()
+numComments=7

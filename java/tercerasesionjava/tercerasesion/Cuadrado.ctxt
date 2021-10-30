@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Cuadrado
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cuadrado\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=color\ lado
+comment1.target=Cuadrado(java.lang.String,\ double)
+comment2.params=
+comment2.target=double\ calcularArea()
+numComments=3

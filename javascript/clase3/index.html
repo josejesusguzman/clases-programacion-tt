@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 id="titulo" onclick="kudasai()">Holiiiiiiiiiiiiiiiiiiii</h1>
+        <button onclick="onichan()">Oni chan</button>
+    </body>
+
+    <script>
+        const titulo = document.getElementById('titulo');
+        if (window.confirm("¿Quieres presionarme rico?")) {
+            titulo.innerHTML = "Yame kudasai"
+        } else {
+            titulo.innerHTML = "No siento rico"
+        }
+
+        function kudasai() {
+            var audio = new Audio('audio.mp3');
+            audio.play();
+        }
+
+        function onichan() {
+            var audio = new Audio('onichan.mp3');
+            audio.play();
+        }
+    </script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manejo de Cookies</title>
+    </head>
+    <body>
+        <h1>Manejo de Cookies acción</h1>
+        <button id="cerrarapp">App abierta</button>
+        <h2 id="textCookie"></h2>
+        <script>
+            let setCookie = (name, value, days) => {
+                let expires = "";
+                if (days) {
+                    let date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = ", expires=" + date.toUTCString();
+
+                    document.cookie = name + "=" + (value || "") + expires + ",path=/";
+
+                }
+            }
+
+            let getCookie = name => {
+                let nameCookie = name + "=";
+                let textCookie = document.cookie.split(";");
+                for (let i = 0; i < textCookie.length; i++) {
+                    let cookie = textCookie[i];
+                    while (cookie.charAt[0] === " ")
+                        cookie = cookie.substring(1, c.length)
+
+                    if (cookie.indexOf(nameCookie) === 0)
+                        return cookie.substring(nameCookie.length, cookie.length)
+                }
+
+                return null;
+            }
+
+            const cerrar = document.getElementById("cerrarapp");
+            const textCookie = document.getElementById("textCookie");
+
+            cerrar.addEventListener("click", function() {
+                setCookie("appCerrada", "true", 30);
+                console.log(getCookie("appCerrada"))
+                textCookie.innerHTML = "App Cerrada"
+            })
+
+        </script>
+    </body>
+</html>
