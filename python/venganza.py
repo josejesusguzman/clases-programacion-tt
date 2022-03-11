@@ -6,8 +6,9 @@ import random
 # Genera username y passwords random
 def random_word():
     word = ''
+    randomcool = random.SystemRandom()
     for i in range(10):
-        word += random.choice('abcdefghijklmnopqrstuvwxyz1234567890._')
+        word += randomcool.choice('abcdefghijklmnopqrstuvwxyz1234567890._!"#$%&+')
     return word
 
 # Manda la petición

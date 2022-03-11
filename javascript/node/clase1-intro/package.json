@@ -1,0 +1,11 @@
+{
+  "name": "clase1node",
+  "version": "1.0.0",
+  "description": "Clase 1 de node JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "brujeriatech",
+  "license": "MIT"
+}
