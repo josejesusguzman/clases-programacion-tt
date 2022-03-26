@@ -1,0 +1,80 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cherk {
+    display: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 { width: 8.33%;}
+.col-2 { width: 16.66%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33%;}
+.col-5 { width: 41%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58%;}
+.col-8 { width: 66.66%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83%;}
+.col-11 { width: 91.66%;}
+.col-12 { width: 100%;}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background-color: green;
+    color: whitesmoke;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: brown;
+}
+
+.header {
+}
+
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
